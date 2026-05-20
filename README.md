@@ -70,3 +70,30 @@ sudo apt install gnome-software-plugin-flatpak
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+## 🚀 Instalación de Ptyxis solo debian no Flatpak
+
+Para instalar el script y configurar Ptyxis correctamente, sigue estos pasos en tu terminal:
+
+1. **Dale permisos de ejecución al archivo:**
+
+   chmod +x ptyxis.sh
+   
+2. **Ejecuta el instalador con privilegios de root:**
+   
+   sudo ./ptyxis.sh
+   
+3. ## 🛠️ Solución al problema de la Ruta (Ruta actual vs Home)
+
+Por defecto, en Debian 13, algunas extensiones de Nautilus abren la terminal en la carpeta personal (`/home`) y no donde estás parado.
+
+### La solución aplicada:
+Para que **Ptyxis** reconozca la ubicación de la carpeta desde los archivos de Nautilus, se deben forzar los argumentos de GTK4 mediante GSettings. El script ejecuta:
+
+# Fuerza a la extensión a pasar la ruta actual como argumento
+
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal use-all-terminal-args true
+
+# Define explícitamente el binario de Ptyxis
+
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal ptyxis
+
