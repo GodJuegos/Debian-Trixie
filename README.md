@@ -60,6 +60,8 @@ sudo apt-get install fonts-freefont-ttf fonts-freefont-otf
 
 sudo apt-get install ttf-mscorefonts-installer
 
+sudo apt install fonts-ubuntu
+
 # 5. Instalamos Flatpak para algunos programas con esta compatibilad
 
 sudo apt install flatpak
