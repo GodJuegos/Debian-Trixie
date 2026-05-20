@@ -61,7 +61,10 @@ sudo apt-get install fonts-freefont-ttf fonts-freefont-otf
 sudo apt-get install ttf-mscorefonts-installer
 
 # 5. Instalamos Flatpak para algunos programas con esta compatibilad
+
 sudo apt install flatpak
+
 sudo apt install gnome-software-plugin-flatpak
+
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
