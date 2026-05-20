@@ -43,13 +43,21 @@ hacemos un apt update
 # 4. Instalamos Packetes
 
 sudo apt update && sudo apt dist-upgrade -y
+
 sudo apt install curl git wget
+
 sudo apt install fastfetch
+
 sudo apt install exfat-fuse hfsplus ntfs-3g
+
 sudo apt install gdebi gdebi-core synaptic
+
 sudo apt install p7zip-full p7zip-rar rar unrar
+
 sudo apt install ffmpeg libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-pulseaudio vorbis-tools
+
 sudo apt-get install fonts-freefont-ttf fonts-freefont-otf
+
 sudo apt-get install ttf-mscorefonts-installer
 
 # 5. Instalamos Flatpak para algunos programas con esta compatibilad
